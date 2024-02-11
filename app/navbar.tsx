@@ -10,7 +10,8 @@ const Navbar = () => {
             <div className="full-width" style={{
                 backgroundColor: "#f7f6ef",
                 paddingTop: "5px",
-                paddingBottom: "5px"
+                paddingBottom: "5px",
+                marginBottom: "10px",
             }}>
                 <div className="margin-width" style={{
                     display: "flex",

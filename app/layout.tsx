@@ -4,7 +4,7 @@ import { Questrial } from 'next/font/google'
 import Navbar from "./navbar";
 import Footer from "./footer"
 
-const inter = Questrial({ weight: '400', subsets: ["latin"] });
+const inter = Questrial({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   description: "EVE online corporation"
