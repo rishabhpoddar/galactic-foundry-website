@@ -6,8 +6,7 @@ import Navbar from "./navbar";
 const inter = Questrial({ weight: '400', subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Galactic Foundry",
-  description: "EVE online corporation",
+  description: "EVE online corporation"
 };
 
 export default function RootLayout({
