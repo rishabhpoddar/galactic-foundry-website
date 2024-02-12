@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.background-image-overlay {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.background-image-overlay div {
+  background-color: rgba(0, 0, 0, 0.5);
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.background-image-overlay-image-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-image-overlay-image-container img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .background-image-text-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: white;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .background-image-text-1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .background-image-text-2 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .background-image-text-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: white;
+    flex-direction: column;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .background-image-text-1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .background-image-text-2 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .background-image-text-1 {
+    font-size: 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .background-image-text-1 {
+    font-size: 70px;
+  }
+}

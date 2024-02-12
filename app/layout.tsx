@@ -24,14 +24,21 @@ export default function RootLayout({
         minHeight: "100vh",
       }}>
         <div style={{
-          paddingTop: "2%",
-          paddingBottom: "2%",
-          fontSize: "22px",
-        }}>Galactic Foundry Consortium</div>
-        <Navbar />
+          position: "sticky",
+          top: 0
+        }}>
+          <div className="full-width" style={{
+            paddingLeft: "5vw",
+            paddingTop: "2%",
+            paddingBottom: "2%",
+            fontSize: "22px",
+            backgroundColor: "white"
+          }}>Galactic Foundry Consortium</div>
+          <Navbar />
+        </div >
         {children}
-        <Footer />
-      </body>
-    </html>
+        < Footer />
+      </body >
+    </html >
   );
 }
